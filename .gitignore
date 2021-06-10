@@ -1,0 +1,28 @@
+# JavaFR Git-Ignore Rules
+#
+# wmdamk-2007   sanke <steve.pechberti@gmail.com>
+# ===============================================
+
+### Compilation and Temporary Folders
+#/**/bin/
+/**/build/
+/**/target/
+
+### Compilation and Temporary Files for Java, LaTex, ...
+#   JAVA
+/**/.class
+#   Maven Flatten Plug-In
+/**/.flattened-pom.xml
+#   LaTeX
+/**/.log
+/**/.aux
+/**/.tmp
+/**/.synctex.gz
+
+### Additionnal Files
+#   Eclipse Project
+/**/.settings/
+/**/.externalToolBuilders/
+/**/.project
+/**/.classpath
+/**/.pydevproject

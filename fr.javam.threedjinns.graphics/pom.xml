@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.pechberti.steve</groupId>
+		<artifactId>MyMavenConfig</artifactId>
+		<version>dev-fr</version>
+	</parent>
+
+	<artifactId>fr.javam.threedjinns.graphics</artifactId>
+	<version>${javafr.threedjinns.version}</version>
+
+	<name>${project.artifactId}</name>
+	<description>JavaFX Implementation For Java 3D Engine</description>
+
+	<dependencies>
+		<dependency>
+	      <groupId>com.pechberti.steve</groupId>
+	      <artifactId>fr.javafx</artifactId>
+	      <version>${javafr.fx.version}</version>
+	    </dependency>
+
+		<dependency>
+	      <groupId>com.pechberti.steve</groupId>
+	      <artifactId>fr.javam.threedjinns</artifactId>
+	      <version>${javafr.threedjinns.version}</version>
+	    </dependency>
+    </dependencies>
+
+</project>
