@@ -3,10 +3,9 @@ package fr.threedijnns.engine;
 import java.nio.DoubleBuffer;
 import java.nio.FloatBuffer;
 
+import fr.java.math.algebra.vector.generic.Vector3D;
 import fr.java.math.geometry.plane.Point2D;
 import fr.java.math.geometry.space.Point3D;
-import fr.java.math.geometry.space.Vector3D;
-
 import fr.threedijnns.api.lang.enums.PrimitiveType;
 
 public interface gxDrawerPrimitives {

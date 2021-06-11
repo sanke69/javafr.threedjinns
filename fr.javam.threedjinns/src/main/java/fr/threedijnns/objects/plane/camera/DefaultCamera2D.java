@@ -5,7 +5,7 @@ import java.util.Optional;
 import fr.java.math.geometry.plane.Frame2D;
 import fr.java.math.geometry.plane.Point2D;
 import fr.java.math.geometry.space.Point3D;
-import fr.java.maths.algebra.matrices.Matrix44d;
+import fr.java.maths.algebra.matrices.DoubleMatrix44;
 import fr.java.maths.geometry.Plane;
 import fr.java.maths.geometry.space.camera.Projections3D;
 import fr.java.maths.geometry.space.types.SimpleRay3D;
@@ -16,12 +16,12 @@ public class DefaultCamera2D implements GxCamera2D {
 	private Point2D			target;
 
 	private Projections3D 	projection;
-	private Matrix44d 		modelview;
+	private DoubleMatrix44 		modelview;
 
 	public DefaultCamera2D(double _left, double _right, double _top, double _bottom) {
 		super();
 		projection 	= Projections3D.ortho(_left, _right, _bottom, _top, -1, 1);
-		modelview   = Matrix44d.identity();
+		modelview   = DoubleMatrix44.identity();
 
 		frame		= Plane.newFrame();
 		target		= null;
@@ -41,10 +41,10 @@ public class DefaultCamera2D implements GxCamera2D {
 		return frame;
 	}
 
-	public Matrix44d projectionMatrix() {
+	public DoubleMatrix44 projectionMatrix() {
 		return projection.asUniformMatrix();
 	};
-	public Matrix44d modelviewMatrix() {
+	public DoubleMatrix44 modelviewMatrix() {
 		if(getFrame() != null && getFrame().getParentFrame() != null) {
 			
 		}

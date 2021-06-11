@@ -2,7 +2,7 @@ package fr.threedijnns.meshes.types;
 
 import java.util.Arrays;
 
-import fr.java.math.geometry.space.Vector3D;
+import fr.java.math.algebra.vector.generic.Vector3D;
 import fr.java.maths.algebra.Vectors;
 
 public class Face {

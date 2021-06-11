@@ -6,12 +6,12 @@ import java.nio.FloatBuffer;
 
 import fr.java.beans.reflect.utils.Primitives;
 import fr.java.lang.enums.PixelFormat;
-import fr.java.math.algebra.matrix.specials.Matrix44D;
+import fr.java.math.algebra.matrix.generic.Matrix44D;
+import fr.java.math.algebra.vector.generic.Vector3D;
 import fr.java.math.geometry.plane.Dimension2D;
 import fr.java.math.geometry.plane.Point2D;
 import fr.java.math.geometry.space.Point3D;
-import fr.java.math.geometry.space.Vector3D;
-import fr.java.maths.algebra.matrices.Matrix44d;
+import fr.java.maths.algebra.matrices.DoubleMatrix44;
 import fr.java.maths.algebra.vectors.DoubleVector4D;
 import fr.java.maths.geometry.plane.shapes.SimpleRectangle2D;
 import fr.java.sdk.log.LogInstance;
@@ -281,22 +281,22 @@ public abstract class gx {
 	public final static void 		pushMatrix(MatrixType _type, int _texId) {
 		m_Drawer.pushMatrix(_type);
 	}
-	public final static Matrix44d 	getMatrix(MatrixType _type) {
+	public final static DoubleMatrix44 	getMatrix(MatrixType _type) {
 		return m_Drawer.getMatrix(_type);
 	}
-	public final static Matrix44d 	getMatrix(MatrixType _type, int _texId) {
+	public final static DoubleMatrix44 	getMatrix(MatrixType _type, int _texId) {
 		return m_Drawer.getMatrix(_type, _texId);
 	}
-	public final static void 		loadMatrix(MatrixType _type, Matrix44d _matrix) {
+	public final static void 		loadMatrix(MatrixType _type, DoubleMatrix44 _matrix) {
 		m_Drawer.loadMatrix(_type, _matrix);
 	}
-	public final static void 		loadMatrix(MatrixType _type, Matrix44d _matrix, int _texId) {
+	public final static void 		loadMatrix(MatrixType _type, DoubleMatrix44 _matrix, int _texId) {
 		m_Drawer.loadMatrix(_type, _matrix, _texId);
 	}
 	public final static void 		loadMatrixMult(MatrixType _type, Matrix44D _matrix) {
 		m_Drawer.loadMatrixMult(_type, _matrix);
 	}
-	public final static void 		loadMatrixMult(MatrixType _type, Matrix44d _matrix, int _texId) {
+	public final static void 		loadMatrixMult(MatrixType _type, DoubleMatrix44 _matrix, int _texId) {
 		m_Drawer.loadMatrixMult(_type, _matrix, _texId);
 	}
 	public final static void 		popMatrix(MatrixType _type) {

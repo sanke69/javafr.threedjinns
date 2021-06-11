@@ -3,7 +3,7 @@ package fr.javafx.controller.space;
 import java.util.Optional;
 
 import fr.java.math.geometry.plane.Point2D;
-import fr.java.maths.Points;
+import fr.java.maths.geometry.types.Points;
 import fr.javafx.controller.GxCameraController;
 import fr.threedijnns.api.interfaces.nodes.space.GxCamera3D;
 import javafx.event.EventHandler;

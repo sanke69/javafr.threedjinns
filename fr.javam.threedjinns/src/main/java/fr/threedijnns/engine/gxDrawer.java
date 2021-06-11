@@ -3,8 +3,8 @@ package fr.threedijnns.engine;
 import java.nio.DoubleBuffer;
 import java.nio.FloatBuffer;
 
-import fr.java.math.algebra.matrix.specials.Matrix44D;
-import fr.java.maths.algebra.matrices.Matrix44d;
+import fr.java.math.algebra.matrix.generic.Matrix44D;
+import fr.java.maths.algebra.matrices.DoubleMatrix44;
 import fr.threedijnns.api.lang.enums.DrawBuffer;
 import fr.threedijnns.api.lang.enums.MatrixType;
 
@@ -35,12 +35,12 @@ public interface gxDrawer {
 	// Matrix methods
 	public void 		pushMatrix		(MatrixType _type);
 	public void 		pushMatrix		(MatrixType _type, int _texId);
-	public Matrix44d 	getMatrix		(MatrixType _type);
-	public Matrix44d 	getMatrix		(MatrixType _type, int _texId);
-	public void 		loadMatrix		(MatrixType _type, Matrix44d _matrix);
-	public void 		loadMatrix		(MatrixType _type, Matrix44d _matrix, int _texId);
+	public DoubleMatrix44 	getMatrix		(MatrixType _type);
+	public DoubleMatrix44 	getMatrix		(MatrixType _type, int _texId);
+	public void 		loadMatrix		(MatrixType _type, DoubleMatrix44 _matrix);
+	public void 		loadMatrix		(MatrixType _type, DoubleMatrix44 _matrix, int _texId);
 	public void 		loadMatrixMult	(MatrixType _type, Matrix44D _matrix);
-	public void 		loadMatrixMult	(MatrixType _type, Matrix44d _matrix, int _texId);
+	public void 		loadMatrixMult	(MatrixType _type, DoubleMatrix44 _matrix, int _texId);
 	public void 		popMatrix		(MatrixType _type);
 	public void 		popMatrix		(MatrixType _type, int _texId);
 

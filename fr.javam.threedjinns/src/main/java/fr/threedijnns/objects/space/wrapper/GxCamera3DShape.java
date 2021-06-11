@@ -1,8 +1,8 @@
 package fr.threedijnns.objects.space.wrapper;
 
 import fr.java.lang.exceptions.NotYetImplementedException;
+import fr.java.math.algebra.vector.generic.Vector3D;
 import fr.java.math.geometry.space.Point3D;
-import fr.java.math.geometry.space.Vector3D;
 import fr.java.maths.Angles;
 import fr.java.maths.algebra.Vectors;
 import fr.java.maths.geometry.space.camera.projections.Frustum3D;

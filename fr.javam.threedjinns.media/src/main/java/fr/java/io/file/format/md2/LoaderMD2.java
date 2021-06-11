@@ -6,11 +6,11 @@ import java.io.InvalidObjectException;
 import java.io.RandomAccessFile;
 import java.nio.charset.StandardCharsets;
 
+import fr.java.math.algebra.vector.generic.Vector3D;
 import fr.java.math.geometry.plane.Point2D;
 import fr.java.math.geometry.space.Point3D;
-import fr.java.math.geometry.space.Vector3D;
-import fr.java.maths.Points;
 import fr.java.maths.algebra.Vectors;
+import fr.java.maths.geometry.types.Points;
 import fr.java.utils.Bytes;
 import fr.threedijnns.objects.space.shapes.meshes.GxMeshObject;
 

@@ -20,12 +20,12 @@ import com.jogamp.opengl.GL3;
 import fr.java.beans.reflect.utils.Primitives;
 import fr.java.lang.enums.PixelFormat;
 import fr.java.lang.exceptions.NotYetImplementedException;
-import fr.java.math.algebra.matrix.specials.Matrix44D;
+import fr.java.math.algebra.matrix.generic.Matrix44D;
+import fr.java.math.algebra.vector.generic.Vector3D;
 import fr.java.math.geometry.plane.Dimension2D;
 import fr.java.math.geometry.plane.Point2D;
 import fr.java.math.geometry.space.Point3D;
-import fr.java.math.geometry.space.Vector3D;
-import fr.java.maths.algebra.matrices.Matrix44d;
+import fr.java.maths.algebra.matrices.DoubleMatrix44;
 import fr.java.maths.algebra.vectors.DoubleVector4D;
 import fr.java.maths.geometry.plane.shapes.SimpleRectangle2D;
 import fr.java.utils.Buffers3D;
@@ -331,14 +331,14 @@ public class GLRenderer implements 	gxEngine,
 		gl.glPushMatrix();
 	}
 	@Override
-	public Matrix44d 	getMatrix(MatrixType _type) {
+	public DoubleMatrix44 	getMatrix(MatrixType _type) {
 		if(_type != MatrixType.MAT_MODELVIEW && _type != MatrixType.MAT_PROJECTION)
 			gl.glActiveTexture(GL.GL_TEXTURE0);
 
 		DoubleBuffer m = DoubleBuffer.allocate(16);
 		gl.glGetDoublev(GLEnums.get(_type), m);
 
-		Matrix44d r = new Matrix44d();
+		DoubleMatrix44 r = new DoubleMatrix44();
 		r.m00 = m.get(0);
 		r.m10 = m.get(1);
 		r.m20 = m.get(2);
@@ -358,7 +358,7 @@ public class GLRenderer implements 	gxEngine,
 		return r;
 	}
 	@Override
-	public Matrix44d 	getMatrix(MatrixType _type, int _texId) {
+	public DoubleMatrix44 	getMatrix(MatrixType _type, int _texId) {
 		if(_type == MatrixType.MAT_MODELVIEW || _type == MatrixType.MAT_PROJECTION)
 			throw new IllegalAccessError("Use only with texture matrix");
 
@@ -367,7 +367,7 @@ public class GLRenderer implements 	gxEngine,
 		DoubleBuffer m = DoubleBuffer.allocate(16);
 		gl.glGetDoublev(GLEnums.get(_type), m);
 
-		Matrix44d r = new Matrix44d();
+		DoubleMatrix44 r = new DoubleMatrix44();
 		r.m00 = m.get(0);
 		r.m10 = m.get(1);
 		r.m20 = m.get(2);
@@ -387,7 +387,7 @@ public class GLRenderer implements 	gxEngine,
 		return r;
 	}
 	@Override
-	public void 		loadMatrix(MatrixType _type, Matrix44d _m) {
+	public void 		loadMatrix(MatrixType _type, DoubleMatrix44 _m) {
 		if(_type != MatrixType.MAT_MODELVIEW && _type != MatrixType.MAT_PROJECTION)
 			gl.glActiveTexture(GL.GL_TEXTURE0);
 
@@ -396,7 +396,7 @@ public class GLRenderer implements 	gxEngine,
 		gl.glLoadMatrixd(_m.getColumnBuffer());
 	}
 	@Override
-	public void 		loadMatrix(MatrixType _type, Matrix44d _m, int _texId) {
+	public void 		loadMatrix(MatrixType _type, DoubleMatrix44 _m, int _texId) {
 		if(_type == MatrixType.MAT_MODELVIEW || _type == MatrixType.MAT_PROJECTION)
 			throw new IllegalAccessError("Use only with texture matrix");
 
@@ -415,7 +415,7 @@ public class GLRenderer implements 	gxEngine,
 		gl.glMultMatrixd(_m.getColumnBuffer());
 	}
 	@Override
-	public void 		loadMatrixMult(MatrixType _type, Matrix44d _m, int _texId) {
+	public void 		loadMatrixMult(MatrixType _type, DoubleMatrix44 _m, int _texId) {
 		if(_type == MatrixType.MAT_MODELVIEW || _type == MatrixType.MAT_PROJECTION)
 			throw new IllegalAccessError("Use only with texture matrix");
 

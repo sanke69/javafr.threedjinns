@@ -3,10 +3,10 @@ package fr.threedijnns.objects.space.shapes.meshes;
 import java.util.ArrayList;
 import java.util.List;
 
+import fr.java.math.algebra.vector.generic.Vector2D;
+import fr.java.math.algebra.vector.generic.Vector3D;
 import fr.java.math.geometry.plane.Point2D;
-import fr.java.math.geometry.plane.Vector2D;
 import fr.java.math.geometry.space.Point3D;
-import fr.java.math.geometry.space.Vector3D;
 import fr.java.math.geometry.space.shapes.Cube3D;
 import fr.threedijnns.gx;
 import fr.threedijnns.api.attributes.Material;

@@ -1,9 +1,9 @@
 package fr.threedijnns.objects.space.primitives;
 
+import fr.java.math.algebra.vector.generic.Vector3D;
 import fr.java.math.geometry.plane.Point2D;
 import fr.java.math.geometry.space.Point3D;
-import fr.java.math.geometry.space.Vector3D;
-import fr.java.maths.Points;
+import fr.java.maths.geometry.types.Points;
 import fr.threedijnns.gx;
 import fr.threedijnns.api.lang.enums.PrimitiveType;
 import fr.threedijnns.objects.base.GxObject3DBase;

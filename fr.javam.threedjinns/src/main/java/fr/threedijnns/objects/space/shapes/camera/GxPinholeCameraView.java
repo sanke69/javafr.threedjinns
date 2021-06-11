@@ -4,8 +4,8 @@ import java.awt.image.BufferedImage;
 
 import fr.java.math.geometry.plane.Point2D;
 import fr.java.math.geometry.space.Point3D;
-import fr.java.maths.Points;
 import fr.java.maths.geometry.space.camera.models.PinholeCamera3D;
+import fr.java.maths.geometry.types.Points;
 import fr.threedijnns.gx;
 import fr.threedijnns.api.attributes.Texture2D;
 import fr.threedijnns.api.interfaces.nodes.GxRenderable;

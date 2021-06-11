@@ -1,9 +1,8 @@
 package fr.threedijnns.objects.space.lights;
 
 import fr.java.lang.properties.ID;
+import fr.java.math.algebra.vector.generic.Vector3D;
 import fr.java.math.geometry.space.Point3D;
-import fr.java.math.geometry.space.Vector3D;
-
 import fr.threedijnns.gx;
 import fr.threedijnns.api.interfaces.GxParent;
 import fr.threedijnns.api.interfaces.nodes.GxRenderable;

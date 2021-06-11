@@ -1,12 +1,12 @@
 package fr.threedijnns.objects.space.wrapper.quadrics;
 
 import fr.java.beans.reflect.utils.Primitives;
-import fr.java.math.geometry.plane.Vector2D;
+import fr.java.math.algebra.vector.generic.Vector2D;
+import fr.java.math.algebra.vector.generic.Vector3D;
 import fr.java.math.geometry.space.Point3D;
-import fr.java.math.geometry.space.Vector3D;
-import fr.java.maths.Points;
 import fr.java.maths.algebra.Vectors;
 import fr.java.maths.geometry.space.shapes.quadrics.shapes.Cylinder3D;
+import fr.java.maths.geometry.types.Points;
 import fr.java.utils.Buffers3D;
 import fr.threedijnns.gx;
 import fr.threedijnns.api.lang.buffer.gxBuffer;

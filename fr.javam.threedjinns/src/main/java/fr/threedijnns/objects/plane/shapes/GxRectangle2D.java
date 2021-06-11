@@ -2,9 +2,9 @@ package fr.threedijnns.objects.plane.shapes;
 
 import fr.java.math.geometry.plane.Point2D;
 import fr.java.math.geometry.plane.Rectangle2D;
-import fr.java.maths.Points;
 import fr.java.maths.geometry.Plane;
 import fr.java.maths.geometry.plane.shapes.SimpleRectangle2D;
+import fr.java.maths.geometry.types.Points;
 import fr.threedijnns.gx;
 import fr.threedijnns.api.interfaces.nodes.GxRenderable;
 import fr.threedijnns.api.lang.enums.PrimitiveType;

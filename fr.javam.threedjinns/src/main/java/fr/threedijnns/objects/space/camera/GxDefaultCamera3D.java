@@ -3,7 +3,7 @@ package fr.threedijnns.objects.space.camera;
 import fr.java.lang.exceptions.NotYetImplementedException;
 import fr.java.math.geometry.plane.Point2D;
 import fr.java.math.geometry.space.Point3D;
-import fr.java.maths.algebra.matrices.Matrix44d;
+import fr.java.maths.algebra.matrices.DoubleMatrix44;
 import fr.java.maths.geometry.space.camera.Projections3D;
 import fr.java.maths.geometry.space.camera.behaviors.QuaternionCameraBehaviorBase;
 import fr.java.maths.geometry.space.types.SimpleRay3D;
@@ -27,11 +27,11 @@ public class GxDefaultCamera3D extends QuaternionCameraBehaviorBase implements G
 	};
 
 	@Override
-	public Matrix44d 	projectionMatrix() {
+	public DoubleMatrix44 	projectionMatrix() {
 		return getProjection().asUniformMatrix();
 	}
 	@Override
-	public Matrix44d 	modelviewMatrix() {
+	public DoubleMatrix44 	modelviewMatrix() {
 //		return getFrame().getModelMatrix().inverse();
 		return getViewMatrix();
 	}

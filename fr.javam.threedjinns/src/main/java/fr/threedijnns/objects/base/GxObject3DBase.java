@@ -3,17 +3,17 @@ package fr.threedijnns.objects.base;
 import java.util.HashSet;
 import java.util.Set;
 
+import fr.java.math.algebra.vector.generic.Vector3D;
 import fr.java.math.geometry.Frame;
 import fr.java.math.geometry.Geometry;
 import fr.java.maths.geometry.Space;
 import fr.java.math.geometry.space.BoundingBox3D;
 import fr.java.math.geometry.space.Frame3D;
 import fr.java.math.geometry.space.Point3D;
-import fr.java.math.geometry.space.Vector3D;
 import fr.java.math.geometry.space.shapes.Cube3D;
-import fr.java.maths.Points;
 import fr.java.maths.algebra.Vectors;
 import fr.java.maths.geometry.space.types.SimpleDimension3D;
+import fr.java.maths.geometry.types.Points;
 import fr.threedijnns.gx;
 import fr.threedijnns.api.attributes.Material;
 import fr.threedijnns.api.attributes.Texture2D;
@@ -50,7 +50,7 @@ public abstract class GxObject3DBase extends GxNode3DBase implements GxObject3D,
 		super();
 
 		frame          		= Space.newFrame();
-		boundBox        	= Space.newCubeUnit();
+		boundBox        	= Space.newCube();
 		scale           	= Vectors.of(1, 1, 1);
 
 		children			= new HashSet<GxNode3D>();

@@ -1,12 +1,12 @@
 package fr.threedijnns.objects.base;
 
+import fr.java.math.algebra.vector.generic.Vector3D;
 import fr.java.math.geometry.space.BoundingBox3D;
 import fr.java.math.geometry.space.Frame3D;
-import fr.java.math.geometry.space.Vector3D;
-import fr.java.maths.Points;
 import fr.java.maths.algebra.Vectors;
 import fr.java.maths.geometry.Space;
 import fr.java.maths.geometry.space.types.SimpleDimension3D;
+import fr.java.maths.geometry.types.Points;
 import fr.threedijnns.api.interfaces.nodes.space.GxNode3D;
 
 public abstract class GxNode3DBase extends GxNodeBase implements GxNode3D {
@@ -19,7 +19,7 @@ public abstract class GxNode3DBase extends GxNodeBase implements GxNode3D {
 		super();
 
 		frame     = Space.newFrame();
-		boundBox  = Space.newCubeUnit();
+		boundBox  = Space.newCube();
 		scale     = Vectors.of(1, 1, 1);
 	}
 

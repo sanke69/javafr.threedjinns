@@ -1,8 +1,8 @@
 package fr.threedijnns.engine.renderers;
 
 import fr.java.math.geometry.space.Point3D;
-import fr.java.maths.Points;
 import fr.java.maths.geometry.space.camera.Projections3D;
+import fr.java.maths.geometry.types.Points;
 import fr.threedijnns.gx;
 import fr.threedijnns.api.interfaces.nodes.GxScene;
 import fr.threedijnns.api.lang.enums.BlendChannel;

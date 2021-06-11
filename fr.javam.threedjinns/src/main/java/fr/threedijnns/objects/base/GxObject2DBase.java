@@ -2,9 +2,9 @@ package fr.threedijnns.objects.base;
 
 import java.util.Set;
 
+import fr.java.math.algebra.vector.generic.Vector2D;
 import fr.java.math.geometry.BoundingBox;
 import fr.java.math.geometry.plane.Frame2D;
-import fr.java.math.geometry.plane.Vector2D;
 import fr.java.maths.algebra.Vectors;
 import fr.java.maths.geometry.Plane;
 import fr.java.maths.geometry.plane.shapes.SimpleRectangle2D;

@@ -1,8 +1,8 @@
 package fr.threedijnns.objects.space.wrapper;
 
+import fr.java.math.algebra.vector.generic.Vector3D;
 import fr.java.math.geometry.space.Frame3D;
 import fr.java.math.geometry.space.Point3D;
-import fr.java.math.geometry.space.Vector3D;
 import fr.java.maths.geometry.Space;
 import fr.threedijnns.gx;
 import fr.threedijnns.api.lang.enums.PrimitiveType;

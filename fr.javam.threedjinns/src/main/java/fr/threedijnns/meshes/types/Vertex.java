@@ -1,7 +1,7 @@
 package fr.threedijnns.meshes.types;
 
-import fr.java.math.geometry.plane.Vector2D;
-import fr.java.math.geometry.space.Vector3D;
+import fr.java.math.algebra.vector.generic.Vector2D;
+import fr.java.math.algebra.vector.generic.Vector3D;
 
 public class Vertex {
 	Vector3D v;

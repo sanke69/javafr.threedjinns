@@ -1,7 +1,7 @@
 package fr.threedijnns.objects.space.wrapper;
 
+import fr.java.math.algebra.vector.generic.Vector3D;
 import fr.java.math.geometry.space.Point3D;
-import fr.java.math.geometry.space.Vector3D;
 import fr.java.maths.geometry.space.types.SimpleRay3D;
 import fr.threedijnns.gx;
 
